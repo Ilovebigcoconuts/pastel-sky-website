@@ -1,184 +1,91 @@
-/* BODY & BACKGROUND */
+/* GENERAL */
 body {
-  background: linear-gradient(to bottom right, #ffe6f7, #ffd1f3, #ffd7e8);
-  font-family: "Comic Sans MS", cursive;
+  font-family: 'Arial', sans-serif;
+  background: #ffe6f7;
   margin: 0;
   padding: 0;
+  color: #ff4bc6;
 }
+a {
+  text-decoration: none;
+  color: #ff6fb1;
+}
+a:hover { color: #ff4bc6; }
 
 /* MENU BAR */
 .menu-bar {
-  background: #ffb6d9;
-  padding: 12px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 18px;
-  border-bottom: 4px solid #ff69b4;
-  box-shadow: 0 0 10px #ffb6d9;
+  display: flex;
+  justify-content: center;
+  background: #ffc0e8;
+  padding: 10px;
   position: sticky;
   top: 0;
   z-index: 100;
 }
-
 .menu-bar a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 15px;
-  position: relative;
+  margin: 0 10px;
+  font-weight: bold;
+  text-shadow: 0 0 4px #ffc6ef;
 }
-
-.menu-bar a:hover {
-  color: #ffd1f3;
-  text-shadow: 0 0 6px #ff8cd9;
-  cursor: pointer;
-}
-
-/* DROPDOWN */
 .dropdown {
-  display: inline-block;
   position: relative;
+  display: inline-block;
 }
-
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #ffb6d9;
-  min-width: 120px;
+  background-color: #ffe6f7;
+  min-width: 150px;
+  box-shadow: 0 8px 16px 0 rgba(255,0,150,0.2);
   z-index: 1;
-  border: 2px solid #ff69b4;
-  border-radius: 8px;
 }
-
 .dropdown-content a {
   display: block;
   padding: 8px 12px;
-  margin: 0;
 }
-
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* WELCOME SECTION */
+/* WELCOME */
 .welcome-section {
   text-align: center;
-  margin-top: 40px;
+  padding: 60px 20px;
 }
-
 .sparkly-title {
   font-size: 48px;
-  background: linear-gradient(to right, #ff9be1, #ff6fcb, #ffc6ef);
-  -webkit-background-clip: text;
-  color: transparent;
-  text-shadow: 0 0 10px #ffade7, 0 0 20px #ff8cdc;
-  margin-bottom: 15px;
+  text-shadow: 0 0 8px #ffd1f3;
+  margin-bottom: 20px;
 }
-
 .intro-text {
   font-size: 20px;
-  color: #ff4bc6;
-  text-shadow: 0 0 6px #ffd1f3;
-  margin: 0 20px 40px 20px;
+  text-shadow: 0 0 6px #ffc6ef;
 }
 
-/* CONTENT SECTIONS */
-.content {
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-.section {
-  background: #ffe6f7;
-  border: 2px solid #ff69b4;
-  margin: 20px auto;
-  padding: 15px;
-  max-width: 600px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px #ffb6d9;
-}
-
-.section h2 {
-  color: #ff4bc6;
-  text-shadow: 0 0 6px #ffd1f3;
-}
-
-.section p {
-  color: #ff6fb1;
-  text-shadow: 0 0 4px #ffc6ef;
-}
-.hair-section {
+/* CAROUSELS (Hair & Nails) */
+.hair-section, .nails-section {
   padding: 20px;
   background: #ffe6f7;
 }
-
-.hair-section h2 {
+.hair-section h2, .nails-section h2, .skin-section h2,
+.influencers-section h2, .actresses-section h2,
+.movies-section h2, .tvshows-section h2, .books-section h2, .blogs-section h2,
+.aesthetics-section h2 {
   text-align: center;
   font-size: 36px;
   color: #ff4bc6;
   text-shadow: 0 0 6px #ffd1f3;
   margin-bottom: 20px;
 }
-
-.hair-carousel {
+.hair-carousel, .nails-carousel {
   display: flex;
-  overflow-x: auto; /* horizontal scroll */
+  overflow-x: auto;
   gap: 20px;
   padding-bottom: 10px;
   scroll-behavior: smooth;
 }
-
-.hair-card {
-  flex: 0 0 250px; /* fixed card width */
-  background: #fff0f8;
-  border: 2px solid #ff69b4;
-  border-radius: 12px;
-  box-shadow: 0 0 12px #ffb6d9;
-  text-align: center;
-  padding: 10px;
-}
-
-.hair-card img {
-  width: 220px;
-  height: 150px;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-
-.hair-card h3 {
-  color: #ff4bc6;
-  font-size: 20px;
-  text-shadow: 0 0 6px #ffd1f3;
-  margin-bottom: 5px;
-}
-
-.hair-card p {
-  color: #ff6fb1;
-  font-size: 14px;
-  text-shadow: 0 0 4px #ffc6ef;
-  }
-.hair-section {
-  padding: 20px;
-  background: #ffe6f7;
-}
-
-.hair-section h2 {
-  text-align: center;
-  font-size: 36px;
-  color: #ff4bc6;
-  text-shadow: 0 0 6px #ffd1f3;
-  margin-bottom: 20px;
-}
-
-.hair-carousel {
-  display: flex;
-  overflow-x: auto; /* horizontal scroll */
-  gap: 20px;
-  padding-bottom: 10px;
-  scroll-behavior: smooth;
-}
-
-.hair-card {
-  flex: 0 0 250px; /* fixed card width */
+.hair-card, .nails-card {
+  flex: 0 0 250px;
   background: #fff0f8;
   border: 2px solid #ff69b4;
   border-radius: 12px;
@@ -187,28 +94,52 @@ body {
   padding: 10px;
   transition: transform 0.2s, box-shadow 0.2s;
 }
-
-.hair-card img {
+.hair-card img, .nails-card img {
   width: 220px;
   height: 150px;
   border-radius: 10px;
   margin-bottom: 10px;
 }
-
-.hair-card h3 {
+.hair-card h3, .nails-card h3 {
   color: #ff4bc6;
   font-size: 20px;
   text-shadow: 0 0 6px #ffd1f3;
   margin-bottom: 5px;
 }
-
-.hair-card p {
+.hair-card p, .nails-card p {
   color: #ff6fb1;
   font-size: 14px;
   text-shadow: 0 0 4px #ffc6ef;
 }
-
-.hair-card:hover {
+.hair-card:hover, .nails-card:hover {
   transform: scale(1.05);
   box-shadow: 0 0 15px #ff8cd9;
-  }
+}
+
+/* SKIN */
+.skin-section { text-align: center; padding: 20px; }
+.skin-card { display: inline-block; border: 2px solid #ff69b4; border-radius: 12px; box-shadow: 0 0 12px #ffb6d9; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; margin-top: 20px; }
+.skin-card img { width: 300px; height: 200px; display: block; }
+.skin-card h3 { font-size: 24px; text-shadow: 0 0 6px #ffd1f3; margin: 10px 0 5px 0; }
+.skin-card p { font-size: 16px; text-shadow: 0 0 4px #ffc6ef; margin-bottom: 10px; }
+.skin-card:hover { transform: scale(1.05); box-shadow: 0 0 15px #ff8cd9; }
+
+/* MEDIA & BLOGS LISTS */
+.media-list, .blogs-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+.media-list li, .blogs-list li {
+  margin: 10px 0;
+  font-size: 20px;
+}
+.media-list li a, .blogs-list li a {
+  text-decoration: none;
+  color: #ff6fb1;
+  text-shadow: 0 0 4px #ffc6ef;
+}
+.media-list li a:hover, .blogs-list li a:hover {
+  text-decoration: underline;
+  color: #ff4bc6;
+}
