@@ -156,3 +156,59 @@ body {
   font-size: 14px;
   text-shadow: 0 0 4px #ffc6ef;
   }
+.hair-section {
+  padding: 20px;
+  background: #ffe6f7;
+}
+
+.hair-section h2 {
+  text-align: center;
+  font-size: 36px;
+  color: #ff4bc6;
+  text-shadow: 0 0 6px #ffd1f3;
+  margin-bottom: 20px;
+}
+
+.hair-carousel {
+  display: flex;
+  overflow-x: auto; /* horizontal scroll */
+  gap: 20px;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+}
+
+.hair-card {
+  flex: 0 0 250px; /* fixed card width */
+  background: #fff0f8;
+  border: 2px solid #ff69b4;
+  border-radius: 12px;
+  box-shadow: 0 0 12px #ffb6d9;
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.hair-card img {
+  width: 220px;
+  height: 150px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.hair-card h3 {
+  color: #ff4bc6;
+  font-size: 20px;
+  text-shadow: 0 0 6px #ffd1f3;
+  margin-bottom: 5px;
+}
+
+.hair-card p {
+  color: #ff6fb1;
+  font-size: 14px;
+  text-shadow: 0 0 4px #ffc6ef;
+}
+
+.hair-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ff8cd9;
+  }
