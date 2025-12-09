@@ -67,3 +67,25 @@ footer {
     font-size: 14px;
     color: #7d6f81;
 }
+.menu-bar {
+  font-family: "Comic Sans MS", cursive;
+  font-size: 18px;
+  background: linear-gradient(to bottom, #ffd6f5, #ffbce8);
+  padding: 12px;
+  text-align: center;
+  border: 2px solid #ff8cd9;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #ff8cd9;
+}
+
+.menu-bar a {
+  color: #ff49c2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu-bar a:hover {
+  color: #ff00b3;
+  text-shadow: 0 0 6px #ff7ed6;
+  cursor: pointer;
+}
