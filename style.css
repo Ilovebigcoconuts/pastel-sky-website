@@ -89,3 +89,37 @@ footer {
   text-shadow: 0 0 6px #ff7ed6;
   cursor: pointer;
 }
+body {
+  background: linear-gradient(to bottom right, #ffe6f7, #e8d8ff, #dff3ff);
+  font-family: "Comic Sans MS", cursive;
+  margin: 0;
+  padding: 0;
+}
+
+.intro-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.sparkly-title {
+  font-size: 48px;
+  background: linear-gradient(to right, #ff9be1, #ff6fcb, #ffc6ef);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 10px #ffade7, 0 0 20px #ff8cdc;
+  margin-bottom: 15px;
+}
+
+.pixel-sparkles {
+  font-size: 24px;
+  color: #ff77d3;
+  text-shadow: 0 0 6px #ffc6ef;
+  margin-bottom: 15px;
+}
+
+.intro-text {
+  font-size: 20px;
+  color: #ff4bc6;
+  text-shadow: 0 0 6px #ffd1f3;
+  margin: 0 20px;
+}
